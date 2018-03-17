@@ -1,6 +1,6 @@
 <template>
     <div class="header">
-        <div class="logo">后台管理系统</div>
+        <div class="logo">校园路灯监控后台管理系统</div>
         <div class="user-info">
             <el-dropdown trigger="click" @command="handleCommand">
                 <span class="el-dropdown-link">
@@ -9,6 +9,7 @@
                 </span>
                 <el-dropdown-menu slot="dropdown">
                     <el-dropdown-item command="loginout">退出</el-dropdown-item>
+                    <el-dropdown-item command="modified">修改密码</el-dropdown-item>
                 </el-dropdown-menu>
             </el-dropdown>
         </div>
@@ -28,10 +29,18 @@
             }
         },
         methods:{
+//            modified(){
+//
+//            },
             handleCommand(command) {
                 if(command == 'loginout'){
                     localStorage.removeItem('ms_username')
                     this.$router.push('/login');
+                }else {
+                    if(command == 'modified'){
+//                    localStorage.removeItem('ms_username')
+                        this.$router.push('/modifiedPassword');
+                    }
                 }
             }
         }
@@ -49,7 +58,7 @@
     }
     .header .logo{
         float: left;
-        width:250px;
+        width:280px;
         text-align: center;
     }
     .user-info {

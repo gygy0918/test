@@ -27,56 +27,129 @@
                     {
                         icon: 'el-icon-setting',
                         index: 'readme',
-                        title: '自述'
+                        title: '系统首页'
                     },
                     {
                         icon: 'el-icon-menu',
                         index: '2',
-                        title: '表格',
+                        title: '用户管理',
                         subs: [
                             {
-                                index: 'basetable',
-                                title: '基础表格'
+                                index: 'personlist',
+                                title: '用户列表'
                             },
                             {
-                                index: 'vuetable',
-                                title: 'Vue表格组件'
+                                index: 'personalinfo',
+                                title: '个人信息'
                             }
+//
+//                            {
+//                                index: 'test',
+//                                title: 'graphql测试'
+//                            }
                         ]
                     },
                     {
-                        icon: 'el-icon-date',
+                        icon: 'el-icon-menu',
                         index: '3',
-                        title: '表单',
+                        title: '权限管理',
                         subs: [
                             {
-                                index: 'baseform',
-                                title: '基本表单'
+                                index: 'role',
+                                title: '角色管理',
                             },
                             {
-                                index: 'vueeditor',
-                                title: '编辑器'
+                                index: 'permission',
+                                title: '权限管理'
+                            }
+                        ]
+                    },
+//                    {
+//                        icon: 'el-icon-date',
+//                        index: '4',
+//                        title: '仓库管理',
+//                        subs: [
+//                            {
+//                                index: 'warehouselist',
+//                                title: '仓库列表'
+//                            },
+//                            {
+//                                index: 'newwarehouse',
+//                                title: '新增入库'
+//                            },
+//                            {
+//                                index: 'inWarehousesList',
+//                                title: '入库信息列表'
+//                            },
+//                            {
+//                                index: 'outWarehousesList',
+//                                title: '出库信息列表'
+//                            }
+////                            {
+////                                index: 'markdown',
+////                                title: 'markdown'
+////                            },
+////                            {
+////                                index: 'upload',
+////                                title: '文件上传'
+////                            }
+//                        ]
+//                    },
+                    {
+                        icon: 'el-icon-menu',
+                        index: '6',
+                        title: '监控管理',
+                        subs: [
+                            {
+                                index: 'lamp',
+                                title: '监控信息'
+                            }
+//                            {
+//                                index: 'websocket',
+//                                title: '监控数据测试'
+//                            }
+                        ]
+                    },
+                    {
+                        icon: 'el-icon-menu',
+                        index: '7',
+                        title: '维修管理',
+                        subs: [
+                            {
+                                index: 'repairePerson',
+                                title: '维修人员信息'
                             },
                             {
-                                index: 'markdown',
-                                title: 'markdown'
-                            },
-                            {
-                                index: 'upload',
-                                title: '文件上传'
+                                index: 'repaireInfo',
+                                title: '维修任务列表'
                             }
                         ]
                     },
                     {
-                        icon: 'el-icon-star-on',
-                        index: 'basecharts',
-                        title: '图表'
-                    },
-                    {
-                        icon: 'el-icon-upload2',
-                        index: 'drag',
-                        title: '拖拽'
+                        icon: 'el-icon-menu',
+                        index: '8',
+                        title: '日志管理',
+                        subs: [
+                            {
+                                index: 'loginLog',
+                                title: '用户登录日志'
+                            },
+                            {
+                                index: 'operationLog',
+                                title: '操作日志'
+                            }
+                        ]
                     }
+//                    {
+//                        icon: 'el-icon-star-on',
+//                        index: 'basecharts',
+//                        title: '图表'
+//                    },
+//                    {
+//                        icon: 'el-icon-upload2',
+//                        index: 'drag',
+//                        title: '拖拽'
+//                    }
                 ]
             }
         },
